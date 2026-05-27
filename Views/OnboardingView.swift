@@ -196,14 +196,15 @@ struct OnboardingView: View {
             weight: weightValue,
             height: heightValue,
             gender: gender,
-            ActivityLevel: activityLevel
+            ActivityLevel: activityLevel,
+            isActive: false
         )
         
         context.insert(profile)
         
         do{
             try context.save()
-            print("Profile saved")
+            print("Profile saved")            
         } catch{
             print(error.localizedDescription)
         }

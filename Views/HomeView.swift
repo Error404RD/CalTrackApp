@@ -12,7 +12,7 @@ struct HomeView: View {
     @Query private var profiles: [UserProfile]
     
     var user: UserProfile? {
-        profiles.first
+        profiles.first(where: {$0.isActive})
     }
     
     var dailyCalories: Double {

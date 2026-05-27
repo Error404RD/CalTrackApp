@@ -15,6 +15,7 @@ class UserProfile{
     var height: Double
     var gender: String
     var ActivityLevel: Double
+    var isActive: Bool
     
     var age: Int {
         Calendar.current.dateComponents(
@@ -29,7 +30,8 @@ class UserProfile{
         weight: Double,
         height: Double,
         gender: String,
-        ActivityLevel: Double
+        ActivityLevel: Double,
+        isActive: Bool = true
     ) {
         self.name = name
         self.birthDate = birthDate
@@ -37,5 +39,6 @@ class UserProfile{
         self.height = height
         self.gender = gender
         self.ActivityLevel = ActivityLevel
+        self.isActive = isActive
     }
 }

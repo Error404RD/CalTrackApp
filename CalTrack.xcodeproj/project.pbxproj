@@ -13,6 +13,7 @@
 		82E71E002FC75CD500A739A1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71DFF2FC75CCB00A739A1 /* OnboardingView.swift */; };
 		82E71E032FC76AD700A739A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71E022FC76AD100A739A1 /* HomeView.swift */; };
 		82E71E042FC76D5C00A739A1 /* CaloriesCalculatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71E012FC7681800A739A1 /* CaloriesCalculatorService.swift */; };
+		82E71E102FC793E900A739A1 /* ProfileSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71E0F2FC793E100A739A1 /* ProfileSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		82E71DFF2FC75CCB00A739A1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		82E71E012FC7681800A739A1 /* CaloriesCalculatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesCalculatorService.swift; sourceTree = "<group>"; };
 		82E71E022FC76AD100A739A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		82E71E0F2FC793E100A739A1 /* ProfileSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -121,6 +123,7 @@
 		82E71DF42FC750D500A739A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				82E71E0F2FC793E100A739A1 /* ProfileSelectionView.swift */,
 				82E71E022FC76AD100A739A1 /* HomeView.swift */,
 				82E71DFF2FC75CCB00A739A1 /* OnboardingView.swift */,
 				82E71DFD2FC75BF500A739A1 /* RootView.swift */,
@@ -314,6 +317,7 @@
 				82E71E042FC76D5C00A739A1 /* CaloriesCalculatorService.swift in Sources */,
 				82E71DFE2FC75BFB00A739A1 /* RootView.swift in Sources */,
 				82E71DCA2FC6657D00A739A1 /* ContentView.swift in Sources */,
+				82E71E102FC793E900A739A1 /* ProfileSelectionView.swift in Sources */,
 				82E71E032FC76AD700A739A1 /* HomeView.swift in Sources */,
 				82E71E002FC75CD500A739A1 /* OnboardingView.swift in Sources */,
 				82E71DFC2FC75B9800A739A1 /* UserProfile.swift in Sources */,
