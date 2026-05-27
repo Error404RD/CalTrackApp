@@ -1,181 +1,134 @@
-````markdown
-# CalTrack
+<div align="center">
 
-A modern calorie tracking mobile application built natively for iOS using SwiftUI and SwiftData.
+# 🌊 CalTrack
 
-CalTrack helps users calculate their daily calorie goals based on personal metrics and track their daily calorie intake through a clean and modern experience.
+### Modern Calorie Tracking App for iOS
 
----
+Built with SwiftUI & SwiftData
 
-# Features
+<img src="https://img.shields.io/badge/Swift-5-orange?style=for-the-badge&logo=swift" />
+<img src="https://img.shields.io/badge/iOS-18+-black?style=for-the-badge&logo=apple" />
+<img src="https://img.shields.io/badge/SwiftUI-Native-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/SwiftData-Persistence-green?style=for-the-badge" />
 
-- Daily calorie calculation
-- Personalized onboarding flow
-- Local data persistence using SwiftData
-- Reactive SwiftUI architecture
-- Dark modern UI inspired by the “Deep Sea” palette
-- Profile management
-- Automatic age calculation from birth date
-- Real-time remaining calorie tracking
-- Fully native iOS experience
+</div>
 
 ---
 
-# Tech Stack
+# ✨ Overview
 
-| Technology | Purpose |
-|---|---|
-| Swift | Main programming language |
-| SwiftUI | Declarative UI framework |
-| SwiftData | Local persistence |
-| Xcode | Development environment |
+CalTrack is a modern calorie tracking application designed for iOS using native Apple technologies.
+
+The app helps users:
+
+- Calculate daily calorie needs
+- Track calorie consumption
+- Monitor remaining calories
+- Store profile data locally
+- Experience a premium modern UI
 
 ---
 
-# Architecture
+# 📱 Features
 
-The project follows a clean and scalable structure:
+- ✅ Daily calorie calculation
+- ✅ Personalized onboarding
+- ✅ Local persistence with SwiftData
+- ✅ Reactive SwiftUI architecture
+- ✅ Dark modern UI
+- ✅ Automatic age calculation
+- ✅ Real-time calorie tracking
+- ✅ Profile management
+
+---
+
+# 🧠 Calorie Formula
+
+CalTrack currently uses the **Mifflin-St Jeor Equation**.
+
+## Male
 
 ```text
-CalTrack
-│
-├── Models
-├── Views
-├── Services
-├── Utils
-│   └── Theme
+BMR = (10 × weight)
+    + (6.25 × height)
+    − (5 × age)
+    + 5
 ```
 
----
-
-# Project Structure
-
-## Models
-
-Contains application data models.
-
-Example:
-- UserProfile
-
----
-
-## Views
-
-Contains all SwiftUI screens and reusable UI components.
-
-Example:
-- RootView
-- OnboardingView
-- HomeView
-
----
-
-## Services
-
-Contains business logic and calculations.
-
-Example:
-- CaloriesCalculatorService
-
----
-
-## Utils
-
-Contains helpers, constants, and theme configuration.
-
-Example:
-- AppColors
-
----
-
-# Current Functionality
-
-## Onboarding
-
-The user provides:
-- Name
-- Birth date
-- Weight
-- Height
-- Gender
-- Activity level
-
-All data is stored locally on the device.
-
----
-
-## Home Dashboard
-
-Displays:
-- Daily calorie target
-- Consumed calories
-- Remaining calories
-
----
-
-# Calorie Calculation
-
-CalTrack currently uses the Mifflin-St Jeor Equation to estimate daily calorie needs.
-
-Male:
+## Female
 
 ```text
-BMR = (10 × weight) + (6.25 × height) − (5 × age) + 5
-```
-
-Female:
-
-```text
-BMR = (10 × weight) + (6.25 × height) − (5 × age) − 161
+BMR = (10 × weight)
+    + (6.25 × height)
+    − (5 × age)
+    − 161
 ```
 
 The result is multiplied by the user's activity level.
 
 ---
 
-# Theme
-
-The app uses a custom design system called **Deep Sea**.
+# 🎨 Deep Sea Theme
 
 | Color | Hex |
 |---|---|
-| Ink Black | #0d1b2a |
-| Prussian Blue | #1b263b |
-| Dusk Blue | #415a77 |
-| Lavender Grey | #778da9 |
-| Alabaster Grey | #e0e1dd |
+| Ink Black | `#0d1b2a` |
+| Prussian Blue | `#1b263b` |
+| Dusk Blue | `#415a77` |
+| Lavender Grey | `#778da9` |
+| Alabaster Grey | `#e0e1dd` |
 
 ---
 
-# Future Features
+# 🏗️ Architecture
 
-- Meal tracking
-- Food history
-- Daily statistics
-- Progress charts
-- HealthKit integration
-- Weight progress tracking
-- Notifications and reminders
-- Custom goals
-- Multi-platform support
+```text
+CalTrack
+│
+├── Models
+│   └── UserProfile
+│
+├── Views
+│   ├── RootView
+│   ├── OnboardingView
+│   └── HomeView
+│
+├── Services
+│   └── CaloriesCalculatorService
+│
+└── Utils
+    └── Theme
+        └── AppColors
+```
 
 ---
 
-# Installation
+# ⚙️ Tech Stack
 
-Clone the repository:
+| Technology | Purpose |
+|---|---|
+| Swift | Main language |
+| SwiftUI | UI framework |
+| SwiftData | Local persistence |
+| Xcode | Development environment |
+
+---
+
+# 🚀 Installation
+
+## Clone the repository
 
 ```bash
 git clone https://github.com/Error404RD/CalTrackApp.git
 ```
 
-Open the project:
+## Open the project
 
 ```bash
 open CalTrack.xcodeproj
 ```
 
-Run the app using:
+## Run the app
 
 ```text
 ⌘ + R
@@ -183,7 +136,7 @@ Run the app using:
 
 ---
 
-# Requirements
+# 📦 Requirements
 
 - macOS
 - Xcode 16+
@@ -191,10 +144,30 @@ Run the app using:
 
 ---
 
-# Author
+# 🔮 Planned Features
 
-Developed by Jose Miguel Lopez.
+- Meal tracking
+- Food history
+- Progress charts
+- HealthKit integration
+- Weight tracking
+- Notifications
+- Goals system
+- Multi-platform support
+
+---
+
+# 👨‍💻 Author
+
+### Jose Miguel Lopez
 
 GitHub:
 https://github.com/Error404RD
-````
+
+---
+
+<div align="center">
+
+### Built with ❤️ using SwiftUI
+
+</div>
