@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		82E71DCA2FC6657D00A739A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71DC92FC6657D00A739A1 /* ContentView.swift */; };
+		82E71DFC2FC75B9800A739A1 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71DFB2FC752CD00A739A1 /* UserProfile.swift */; };
+		82E71DFE2FC75BFB00A739A1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71DFD2FC75BF500A739A1 /* RootView.swift */; };
+		82E71E002FC75CD500A739A1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71DFF2FC75CCB00A739A1 /* OnboardingView.swift */; };
+		82E71E032FC76AD700A739A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71E022FC76AD100A739A1 /* HomeView.swift */; };
+		82E71E042FC76D5C00A739A1 /* CaloriesCalculatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71E012FC7681800A739A1 /* CaloriesCalculatorService.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		82E71DD22FC6657E00A739A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,10 +33,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		82E71DC42FC6657D00A739A1 /* CalTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		82E71DD12FC6657E00A739A1 /* CalTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82E71DDB2FC6657E00A739A1 /* CalTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82E71DC42FC6657D00A739A1 /* CalTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CalTrack.app; path = "/Users/jose/Desktop/CalTrack/build/Debug-iphoneos/CalTrack.app"; sourceTree = "<absolute>"; };
+		82E71DC92FC6657D00A739A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82E71DD12FC6657E00A739A1 /* CalTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CalTrackTests.xctest; path = "/Users/jose/Desktop/CalTrack/build/Debug-iphoneos/CalTrack.app/PlugIns/CalTrackTests.xctest"; sourceTree = "<absolute>"; };
+		82E71DDB2FC6657E00A739A1 /* CalTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CalTrackUITests.xctest; path = "/Users/jose/Desktop/CalTrack/build/Debug-iphoneos/CalTrackUITests-Runner.app/PlugIns/CalTrackUITests.xctest"; sourceTree = "<absolute>"; };
+		82E71DFB2FC752CD00A739A1 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		82E71DFD2FC75BF500A739A1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		82E71DFF2FC75CCB00A739A1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		82E71E012FC7681800A739A1 /* CaloriesCalculatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesCalculatorService.swift; sourceTree = "<group>"; };
+		82E71E022FC76AD100A739A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		82E71E082FC7740900A739A1 /* Exceptions for "Theme" folder in "CalTrack" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppColors.swift,
+			);
+			target = 82E71DC32FC6657D00A739A1 /* CalTrack */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		82E71DC62FC6657D00A739A1 /* CalTrack */ = {
@@ -35,14 +60,12 @@
 			path = CalTrack;
 			sourceTree = "<group>";
 		};
-		82E71DD42FC6657E00A739A1 /* CalTrackTests */ = {
+		82E71E052FC7728B00A739A1 /* Theme */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CalTrackTests;
-			sourceTree = "<group>";
-		};
-		82E71DDE2FC6657E00A739A1 /* CalTrackUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CalTrackUITests;
+			exceptions = (
+				82E71E082FC7740900A739A1 /* Exceptions for "Theme" folder in "CalTrack" target */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,21 +98,79 @@
 		82E71DBB2FC6657D00A739A1 = {
 			isa = PBXGroup;
 			children = (
+				82E71DFA2FC7510B00A739A1 /* Resorces */,
+				82E71DF92FC7510300A739A1 /* Utils */,
+				82E71DF82FC750F800A739A1 /* Persistence */,
+				82E71DF72FC750F200A739A1 /* Services */,
+				82E71DF62FC750E800A739A1 /* Components */,
+				82E71DF52FC750DD00A739A1 /* ViewModels */,
+				82E71DF42FC750D500A739A1 /* Views */,
+				82E71DF32FC750CB00A739A1 /* Models */,
 				82E71DC62FC6657D00A739A1 /* CalTrack */,
-				82E71DD42FC6657E00A739A1 /* CalTrackTests */,
-				82E71DDE2FC6657E00A739A1 /* CalTrackUITests */,
-				82E71DC52FC6657D00A739A1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		82E71DC52FC6657D00A739A1 /* Products */ = {
+		82E71DF32FC750CB00A739A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				82E71DC42FC6657D00A739A1 /* CalTrack.app */,
-				82E71DD12FC6657E00A739A1 /* CalTrackTests.xctest */,
-				82E71DDB2FC6657E00A739A1 /* CalTrackUITests.xctest */,
+				82E71DFB2FC752CD00A739A1 /* UserProfile.swift */,
 			);
-			name = Products;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82E71DF42FC750D500A739A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82E71E022FC76AD100A739A1 /* HomeView.swift */,
+				82E71DFF2FC75CCB00A739A1 /* OnboardingView.swift */,
+				82E71DFD2FC75BF500A739A1 /* RootView.swift */,
+				82E71DC92FC6657D00A739A1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82E71DF52FC750DD00A739A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		82E71DF62FC750E800A739A1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		82E71DF72FC750F200A739A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82E71E012FC7681800A739A1 /* CaloriesCalculatorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82E71DF82FC750F800A739A1 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		82E71DF92FC7510300A739A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				82E71E052FC7728B00A739A1 /* Theme */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		82E71DFA2FC7510B00A739A1 /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resorces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +211,6 @@
 			dependencies = (
 				82E71DD32FC6657E00A739A1 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				82E71DD42FC6657E00A739A1 /* CalTrackTests */,
-			);
 			name = CalTrackTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +230,6 @@
 			);
 			dependencies = (
 				82E71DDD2FC6657E00A739A1 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				82E71DDE2FC6657E00A739A1 /* CalTrackUITests */,
 			);
 			name = CalTrackUITests;
 			packageProductDependencies = (
@@ -196,7 +271,7 @@
 			mainGroup = 82E71DBB2FC6657D00A739A1;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 82E71DC52FC6657D00A739A1 /* Products */;
+			productRefGroup = 82E71DBB2FC6657D00A739A1;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -236,6 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E71E042FC76D5C00A739A1 /* CaloriesCalculatorService.swift in Sources */,
+				82E71DFE2FC75BFB00A739A1 /* RootView.swift in Sources */,
+				82E71DCA2FC6657D00A739A1 /* ContentView.swift in Sources */,
+				82E71E032FC76AD700A739A1 /* HomeView.swift in Sources */,
+				82E71E002FC75CD500A739A1 /* OnboardingView.swift in Sources */,
+				82E71DFC2FC75B9800A739A1 /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
